@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_71ca584b6d9cadb86a3cf6cf119fb65c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_71ca584b6d9cadb86a3cf6cf119fb65c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_71ca584b6d9cadb86a3cf6cf119fb65c = L.map(
+                "map_71ca584b6d9cadb86a3cf6cf119fb65c",
+                {
+                    center: [10.0, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2dbd6aca33b43f665d283f491d7a289b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var marker_b68a5e2f7f55e35f8058be8f3c871e05 = L.marker(
+                [9.9281, -84.0907],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_01076fc76ef9743e98dc4be3f1ec5ca7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b68a5e2f7f55e35f8058be8f3c871e05.setIcon(icon_01076fc76ef9743e98dc4be3f1ec5ca7);
+        
+    
+        var popup_2ec8d85e8d67e19b927380b0cb4782da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2e8302582aa66fb8d413e899b6e7163 = $(`<div id="html_f2e8302582aa66fb8d413e899b6e7163" style="width: 100.0%; height: 100.0%;"><b>San José (Jour 1 & 14)</b><br>🏨 <b>Logement:</b> Hotel Balmoral - Belford Suite<br>📍 <b>À voir:</b> Musée de l'Or, Musée National, Marché Central<br>⚠️ <b>Sécurité:</b> Ville animée, prudence la nuit dans certains quartiers.<br>🍽️ <b>Repas recommandés:</b> Gallo Pinto (riz et haricots noirs), Casado (assiette complète).<br>ℹ️ <b>Infos pratiques:</b> Évitez de conduire la nuit, routes mal éclairées.</div>`)[0];
+            popup_2ec8d85e8d67e19b927380b0cb4782da.setContent(html_f2e8302582aa66fb8d413e899b6e7163);
+        
+
+        marker_b68a5e2f7f55e35f8058be8f3c871e05.bindPopup(popup_2ec8d85e8d67e19b927380b0cb4782da)
+        ;
+
+        
+    
+    
+            marker_b68a5e2f7f55e35f8058be8f3c871e05.bindTooltip(
+                `<div>
+                     San José
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7f411874a3f43342f29784ab9a4b631 = L.marker(
+                [10.5416, -83.5021],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_c86be4dab361ecdb61b6d318c068bf3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d7f411874a3f43342f29784ab9a4b631.setIcon(icon_c86be4dab361ecdb61b6d318c068bf3e);
+        
+    
+        var popup_4ae30187358a265bc18f2a7ac1738d1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0acd79678ab5e6affe608cc803580e9 = $(`<div id="html_c0acd79678ab5e6affe608cc803580e9" style="width: 100.0%; height: 100.0%;"><b>Tortuguero (Jour 2-3)</b><br>🏨 <b>Logement:</b> Mawamba Lodge - chambre standard<br>📍 <b>À voir:</b> Canaux du parc, faune, village de Tortuguero<br>⚠️ <b>Sécurité:</b> Sécurisé, attention aux courants forts en mer.<br>🍽️ <b>Repas recommandés:</b> Olla de Carne (ragoût de bœuf aux légumes).<br>ℹ️ <b>Infos pratiques:</b> Suivez les consignes des guides pour les excursions en bateau.</div>`)[0];
+            popup_4ae30187358a265bc18f2a7ac1738d1a.setContent(html_c0acd79678ab5e6affe608cc803580e9);
+        
+
+        marker_d7f411874a3f43342f29784ab9a4b631.bindPopup(popup_4ae30187358a265bc18f2a7ac1738d1a)
+        ;
+
+        
+    
+    
+            marker_d7f411874a3f43342f29784ab9a4b631.bindTooltip(
+                `<div>
+                     Tortuguero
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4178e1b5ae3bcbb81629ad484963a14e = L.marker(
+                [9.6561, -82.7531],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_863aa1aad2b93640af1a96c4f252ee19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4178e1b5ae3bcbb81629ad484963a14e.setIcon(icon_863aa1aad2b93640af1a96c4f252ee19);
+        
+    
+        var popup_22adf584a3db47527212de81b9ad122f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1f67a92f25c0685241b9172b0b9ec87 = $(`<div id="html_d1f67a92f25c0685241b9172b0b9ec87" style="width: 100.0%; height: 100.0%;"><b>Puerto Viejo (Jour 4-5)</b><br>🏨 <b>Logement:</b> Shawandha Lodge - Bungalow supérieur<br>📍 <b>À voir:</b> Parc Cahuita, Jaguar Rescue Center, plages<br>⚠️ <b>Sécurité:</b> Touristique, éviter la plage la nuit.<br>🍽️ <b>Repas recommandés:</b> Chifrijo (riz, haricots, chicharrón), Poisson au lait de coco.<br>ℹ️ <b>Infos pratiques:</b> Prévoyez un répulsif anti-moustique.</div>`)[0];
+            popup_22adf584a3db47527212de81b9ad122f.setContent(html_d1f67a92f25c0685241b9172b0b9ec87);
+        
+
+        marker_4178e1b5ae3bcbb81629ad484963a14e.bindPopup(popup_22adf584a3db47527212de81b9ad122f)
+        ;
+
+        
+    
+    
+            marker_4178e1b5ae3bcbb81629ad484963a14e.bindTooltip(
+                `<div>
+                     Puerto Viejo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9292530f90a5858f73603c097df21629 = L.marker(
+                [10.4477, -83.9718],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_f3d135ca5f027dd97c429128136a9a5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9292530f90a5858f73603c097df21629.setIcon(icon_f3d135ca5f027dd97c429128136a9a5f);
+        
+    
+        var popup_55cfe8fea68c6318443e2def40c4961f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a4f5ede01d1d2d6fe606e9d87033c1c = $(`<div id="html_5a4f5ede01d1d2d6fe606e9d87033c1c" style="width: 100.0%; height: 100.0%;"><b>Sarapiquí (Jour 6)</b><br>🏨 <b>Logement:</b> Tirimbina - chambre deluxe<br>📍 <b>À voir:</b> Forêt tropicale, observation d'oiseaux<br>⚠️ <b>Sécurité:</b> Sécurisé, précaution contre les moustiques.<br>🍽️ <b>Repas recommandés:</b> Tamales (pâte de maïs farcie cuite dans des feuilles de bananier).<br>ℹ️ <b>Infos pratiques:</b> Portez des vêtements longs pour éviter les piqûres d’insectes.</div>`)[0];
+            popup_55cfe8fea68c6318443e2def40c4961f.setContent(html_5a4f5ede01d1d2d6fe606e9d87033c1c);
+        
+
+        marker_9292530f90a5858f73603c097df21629.bindPopup(popup_55cfe8fea68c6318443e2def40c4961f)
+        ;
+
+        
+    
+    
+            marker_9292530f90a5858f73603c097df21629.bindTooltip(
+                `<div>
+                     Sarapiquí
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33ddb4845d18ffb1bee951f699a10fca = L.marker(
+                [10.4715, -84.6453],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_7cf1010557cb3669d756bd6712f38316 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_33ddb4845d18ffb1bee951f699a10fca.setIcon(icon_7cf1010557cb3669d756bd6712f38316);
+        
+    
+        var popup_eef23678885a554cdd43ddb2387827d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49c96c0dfa34f5f91303ecee8f8e4568 = $(`<div id="html_49c96c0dfa34f5f91303ecee8f8e4568" style="width: 100.0%; height: 100.0%;"><b>La Fortuna (Jour 7-8)</b><br>🏨 <b>Logement:</b> Arenal Oasis Eco Lodge & Wild Refuge - bungalow<br>📍 <b>À voir:</b> Volcan Arenal, thermes, cascades<br>⚠️ <b>Sécurité:</b> Touristique, prévoir un imperméable.<br>🍽️ <b>Repas recommandés:</b> Ceviche (poisson mariné au citron vert).<br>ℹ️ <b>Infos pratiques:</b> Apportez un maillot de bain pour les thermes.</div>`)[0];
+            popup_eef23678885a554cdd43ddb2387827d9.setContent(html_49c96c0dfa34f5f91303ecee8f8e4568);
+        
+
+        marker_33ddb4845d18ffb1bee951f699a10fca.bindPopup(popup_eef23678885a554cdd43ddb2387827d9)
+        ;
+
+        
+    
+    
+            marker_33ddb4845d18ffb1bee951f699a10fca.bindTooltip(
+                `<div>
+                     La Fortuna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4603fff4d274ec8af1f380a7f82e7eeb = L.marker(
+                [10.7041, -85.0266],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_46a510894c9037c7d6d0502fcf42a863 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4603fff4d274ec8af1f380a7f82e7eeb.setIcon(icon_46a510894c9037c7d6d0502fcf42a863);
+        
+    
+        var popup_23c95850c89be58d1eeac5c08757aa4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7384e0f464815ddcdc374316042035aa = $(`<div id="html_7384e0f464815ddcdc374316042035aa" style="width: 100.0%; height: 100.0%;"><b>Río Celeste (Jour 9)</b><br>🏨 <b>Logement:</b> Finca La Amistad Cacao Lodge - bungalow familial<br>📍 <b>À voir:</b> Rivière bleue, parc Tenorio<br>⚠️ <b>Sécurité:</b> Sentiers boueux, prévoir bonnes chaussures.<br>🍽️ <b>Repas recommandés:</b> Guiso de maíz (ragoût de maïs et légumes).<br>ℹ️ <b>Infos pratiques:</b> Randonnée parfois difficile, bien s'équiper.</div>`)[0];
+            popup_23c95850c89be58d1eeac5c08757aa4b.setContent(html_7384e0f464815ddcdc374316042035aa);
+        
+
+        marker_4603fff4d274ec8af1f380a7f82e7eeb.bindPopup(popup_23c95850c89be58d1eeac5c08757aa4b)
+        ;
+
+        
+    
+    
+            marker_4603fff4d274ec8af1f380a7f82e7eeb.bindTooltip(
+                `<div>
+                     Río Celeste
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03758abd5b85546a81b7a377b7c29ee7 = L.marker(
+                [9.8791, -85.5277],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_714f3d24981734a77b3ab4680bb4c0b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_03758abd5b85546a81b7a377b7c29ee7.setIcon(icon_714f3d24981734a77b3ab4680bb4c0b8);
+        
+    
+        var popup_302122dda95bb2c446230f04a8cca684 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a706fc363cdcf2a5b093251e63d76cb = $(`<div id="html_3a706fc363cdcf2a5b093251e63d76cb" style="width: 100.0%; height: 100.0%;"><b>Sámara (Jour 10-13)</b><br>🏨 <b>Logement:</b> Pequeño Gecko Verde - villa Caribe<br>📍 <b>À voir:</b> Plages de Sámara, Carrillo, Ostional<br>⚠️ <b>Sécurité:</b> Plages sûres, attention aux courants marins.<br>🍽️ <b>Repas recommandés:</b> Pescado entero (poisson frit entier avec riz et haricots).<br>ℹ️ <b>Infos pratiques:</b> Idéal pour le snorkeling et les sports nautiques.</div>`)[0];
+            popup_302122dda95bb2c446230f04a8cca684.setContent(html_3a706fc363cdcf2a5b093251e63d76cb);
+        
+
+        marker_03758abd5b85546a81b7a377b7c29ee7.bindPopup(popup_302122dda95bb2c446230f04a8cca684)
+        ;
+
+        
+    
+    
+            marker_03758abd5b85546a81b7a377b7c29ee7.bindTooltip(
+                `<div>
+                     Sámara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_918e911b25d6b9235b6f432d2805fab5 = L.polyline(
+                [[9.9281, -84.0907], [10.5416, -83.5021]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var marker_fa9315edd7c676a6e0ac2376b1a94e13 = L.marker(
+                [10.234850000000002, -83.7964],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_42f3f286099cd12909ce86c8103d10b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa9315edd7c676a6e0ac2376b1a94e13.setIcon(icon_42f3f286099cd12909ce86c8103d10b5);
+        
+    
+        var popup_e70ea5412fc7aeec71537a7ff9e1b290 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35bf2dfe387b41cacaae7adb0760d748 = $(`<div id="html_35bf2dfe387b41cacaae7adb0760d748" style="width: 100.0%; height: 100.0%;">🚗 <b>Trajet:</b> San José → Tortuguero<br>📏 120 km + bateau<br>⏱️ ~3h30</div>`)[0];
+            popup_e70ea5412fc7aeec71537a7ff9e1b290.setContent(html_35bf2dfe387b41cacaae7adb0760d748);
+        
+
+        marker_fa9315edd7c676a6e0ac2376b1a94e13.bindPopup(popup_e70ea5412fc7aeec71537a7ff9e1b290)
+        ;
+
+        
+    
+    
+            var poly_line_b47a513b60a580cfa65f1bc8440b1171 = L.polyline(
+                [[10.5416, -83.5021], [9.6561, -82.7531]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var marker_c3bb0cd9ea224be47f9711bafacccc5c = L.marker(
+                [10.09885, -83.1276],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_bc19f0f551859e6e21e5f740c7c4c02b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3bb0cd9ea224be47f9711bafacccc5c.setIcon(icon_bc19f0f551859e6e21e5f740c7c4c02b);
+        
+    
+        var popup_3b61a466a699a80ef5072a3b8c07c330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1ae071a15afddf9a66fbed6f9e74f01 = $(`<div id="html_d1ae071a15afddf9a66fbed6f9e74f01" style="width: 100.0%; height: 100.0%;">🚗 <b>Trajet:</b> Tortuguero → Puerto Viejo<br>📏 210 km<br>⏱️ ~5h</div>`)[0];
+            popup_3b61a466a699a80ef5072a3b8c07c330.setContent(html_d1ae071a15afddf9a66fbed6f9e74f01);
+        
+
+        marker_c3bb0cd9ea224be47f9711bafacccc5c.bindPopup(popup_3b61a466a699a80ef5072a3b8c07c330)
+        ;
+
+        
+    
+    
+            var poly_line_da08c0320329d569585a4142f9832d59 = L.polyline(
+                [[9.6561, -82.7531], [10.4477, -83.9718]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var marker_8760a51469e6fcd40275136e07f4a6d1 = L.marker(
+                [10.0519, -83.36245],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_531e53d868db9341692a8eb6dc412408 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8760a51469e6fcd40275136e07f4a6d1.setIcon(icon_531e53d868db9341692a8eb6dc412408);
+        
+    
+        var popup_28209c7fc37d5b34f19cb166a7f7f80f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6177c94bce57f7f6b587692c05501a4d = $(`<div id="html_6177c94bce57f7f6b587692c05501a4d" style="width: 100.0%; height: 100.0%;">🚗 <b>Trajet:</b> Puerto Viejo → Sarapiquí<br>📏 220 km<br>⏱️ ~5h</div>`)[0];
+            popup_28209c7fc37d5b34f19cb166a7f7f80f.setContent(html_6177c94bce57f7f6b587692c05501a4d);
+        
+
+        marker_8760a51469e6fcd40275136e07f4a6d1.bindPopup(popup_28209c7fc37d5b34f19cb166a7f7f80f)
+        ;
+
+        
+    
+    
+            var poly_line_251645972ab4da48a2e232dae93e2a2a = L.polyline(
+                [[10.4477, -83.9718], [10.4715, -84.6453]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var marker_b11d75687e146b0493e627cfc5e7bfdb = L.marker(
+                [10.4596, -84.30855],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_7efe84b37fdd01157954d16d1f8201d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b11d75687e146b0493e627cfc5e7bfdb.setIcon(icon_7efe84b37fdd01157954d16d1f8201d1);
+        
+    
+        var popup_c48de9ccc0edf1f3c6be18e769f9d52a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81c6b7dcadf6a62cc84416945f07bfc6 = $(`<div id="html_81c6b7dcadf6a62cc84416945f07bfc6" style="width: 100.0%; height: 100.0%;">🚗 <b>Trajet:</b> Sarapiquí → La Fortuna<br>📏 95 km<br>⏱️ ~2h</div>`)[0];
+            popup_c48de9ccc0edf1f3c6be18e769f9d52a.setContent(html_81c6b7dcadf6a62cc84416945f07bfc6);
+        
+
+        marker_b11d75687e146b0493e627cfc5e7bfdb.bindPopup(popup_c48de9ccc0edf1f3c6be18e769f9d52a)
+        ;
+
+        
+    
+    
+            var poly_line_a55ac8bd266adda5db0d50a67b459ca8 = L.polyline(
+                [[10.4715, -84.6453], [10.7041, -85.0266]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var marker_ef44b3559fb6dba32f1501d4563830bd = L.marker(
+                [10.587800000000001, -84.83595],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_c370d226a45d5d9568df59d132ec6684 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef44b3559fb6dba32f1501d4563830bd.setIcon(icon_c370d226a45d5d9568df59d132ec6684);
+        
+    
+        var popup_9840af0e8f3e33c1cc8642025189286c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c040a725aed775c3589cf8849e1aff43 = $(`<div id="html_c040a725aed775c3589cf8849e1aff43" style="width: 100.0%; height: 100.0%;">🚗 <b>Trajet:</b> La Fortuna → Río Celeste<br>📏 70 km<br>⏱️ ~1h45</div>`)[0];
+            popup_9840af0e8f3e33c1cc8642025189286c.setContent(html_c040a725aed775c3589cf8849e1aff43);
+        
+
+        marker_ef44b3559fb6dba32f1501d4563830bd.bindPopup(popup_9840af0e8f3e33c1cc8642025189286c)
+        ;
+
+        
+    
+    
+            var poly_line_d70590b073301e72faaf3c243acfafe6 = L.polyline(
+                [[10.7041, -85.0266], [9.8791, -85.5277]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var marker_ddb1d47fe874840dec859971b56866a3 = L.marker(
+                [10.291599999999999, -85.27715],
+                {}
+            ).addTo(map_71ca584b6d9cadb86a3cf6cf119fb65c);
+        
+    
+            var icon_7e61bdd0e86a3d417a03b279e0750832 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ddb1d47fe874840dec859971b56866a3.setIcon(icon_7e61bdd0e86a3d417a03b279e0750832);
+        
+    
+        var popup_65524451a0775b9a2334b5a98dd783c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88798b2e7487b72bf994386ebb58e262 = $(`<div id="html_88798b2e7487b72bf994386ebb58e262" style="width: 100.0%; height: 100.0%;">🚗 <b>Trajet:</b> Río Celeste → Sámara<br>📏 150 km<br>⏱️ ~4h</div>`)[0];
+            popup_65524451a0775b9a2334b5a98dd783c6.setContent(html_88798b2e7487b72bf994386ebb58e262);
+        
+
+        marker_ddb1d47fe874840dec859971b56866a3.bindPopup(popup_65524451a0775b9a2334b5a98dd783c6)
+        ;
+
+        
+    
+</script>
+</html>
